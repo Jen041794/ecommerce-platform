@@ -4,6 +4,8 @@
 
 🔗 **線上 Demo**：https://ecommerce-platform-sigma-nine.vercel.app/
 
+![ShopMate 首頁預覽](public/shopmate.png)
+
 > 📌 本專案為**個人練習與作品集用途**，串接公開測試 API（DummyJSON），無自建後端與真實金流。
 >
 > 📄 著作權所有 © Michelle。本專案僅供**個人學習與作品集展示**，未經作者同意，不得用於商業用途。
