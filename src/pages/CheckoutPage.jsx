@@ -58,7 +58,12 @@ function CheckoutPage() {
     ) {
       e.email = 'Email 格式不正確';
     }
-    if (!shipping.address.trim()) e.address = '請填寫地址';
+    const address = shipping.address.trim();
+    if (!address) {
+      e.address = '請填寫地址';
+    } else if (address.length < 8 || !/\d/.test(address)) {
+      e.address = '請輸入完整地址（至少 8 字並含門牌號碼）';
+    }
     setErrors(e);
     return Object.keys(e).length === 0;
   };

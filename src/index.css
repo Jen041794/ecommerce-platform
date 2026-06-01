@@ -74,6 +74,26 @@ body {
   background: #ced4da;
 }
 
+/* 手機漢堡展開：首頁與購物車並排、購物車去邊框、中間留間隔 */
+@media (max-width: 991.98px) {
+  #mainNav {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  #mainNav .navbar-nav {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  #mainNav .btn-outline-light {
+    border-color: transparent;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
 /* 商品詳情輪播 */
 .detail-gallery {
   background: #fff;
